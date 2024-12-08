@@ -1,19 +1,5 @@
 # MODUL-EKONOMETRIKA-DAN-APLIKASI-DALAM-R-STUDIO
----
-title: "MODUL EKONOMETRIKA DAN APLIKASI DALAM R STUDIO"
-output:
-  html_document:
-    toc: true          # Aktifkan daftar isi
-    toc_float: true    # Jadikan daftar isi mengambang (floating sidebar)
-    number_sections: true # Beri nomor pada bab/sub-bab
-    theme: flatly    # Tema HTML (opsional)
-    highlight: zenburn
-    css: css1.css
-      # Skema warna syntax highlighting (opsional)
-editor_options: 
-  markdown: 
-    wrap: 72
----
+
 
 # Bab 1: Pendahuluan
 
