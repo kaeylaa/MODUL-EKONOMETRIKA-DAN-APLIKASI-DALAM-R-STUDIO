@@ -313,7 +313,8 @@ yang diamati dan yang diprediksi oleh model).
 
 $\beta_0$ dan $\beta_1$ berperan sebagai parameter populasi. Selain itu,
 persamaan regresi yang dihitung dengan menggunakan metode kuadrat
-terkecil dapat memenuhi sifat sebagai berikut. 1. Jumlah residual sama
+terkecil dapat memenuhi sifat sebagai berikut. 
+1. Jumlah residual sama
 dengan nol. Apabila dituliskan dalam persamaan matematis yakni sebagai
 berikut. 
 $$
@@ -321,10 +322,10 @@ $$
 $$ dengan pembuktian, yakni $$
 \sum_{i=1}^n e_i = \sum_{i=1}^n \left( Y_i - b_0 - b_1 X_i \right)
 $$
-
-$$
 = \sum_{i=1}^n Y_i - n b_0 - b_1 \sum_{i=1}^n X_i = 0 \quad \text{(dari persamaan normal)}
-$$ 2. Jumlah kuadrat residual adalah minimum. 3. Jumlah nilai observasi
+$$ 
+2. Jumlah kuadrat residual adalah minimum. 
+3. Jumlah nilai observasi
 ---
 
 #### Regresi Berganda
