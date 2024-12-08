@@ -56,9 +56,9 @@ Teori Matematika : Dalam hal ini, teori matematika diaplikasikan dalam
 suatu pembentukan persamaan model matematis tanpa verifikasi teori
 secara empiris. Misalnya pada fungsi produksi yang dimodelkan sebagai
 berikut. 
-$$
+$
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2
-$$
+$
 
 Di mana: - $Y$ adalah output suatu proses produksi, - $X_1$ adalah input
 modal, - $X_2$ adalah input tenaga kerja, - $\beta_0$ adalah
@@ -181,9 +181,9 @@ Metode Ordinary Least Squares ini merupakan model estimasi yang
 ditujukan untuk mendapatkan estimator regresi (koefisien regresi) yang
 tidak bias (unbiased) dan efisien (efficient). Dalam suatu model
 statistik linier yakni
-$$
+$
 y = \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_k X_k + \epsilon
-$$ 
+$ 
 Variabel e sangat memegang peran dalam model ekonometrika, tetapi
 variabel ini tidak dapat diteliti dan tidak pula tersedia informasi
 tentang bentuk distribusi kemungkinannya. Disamping asumsi mengenai
@@ -202,13 +202,13 @@ bias. 2. Tidak terdapat autokorelasi antar variabel untuk setiap
 observasi. Dengan kata lain dapat dituliskan dalam persamaan yakni
 sebagai berikut. Persamaan berikut menunjukkan varians:
 
-$$
+$
 Var(e_i, e_j) = 
 \begin{cases} 
 \sigma^2, & \text{jika } i = j \\
 0, & \text{jika } i \neq j
 \end{cases}
-$$
+$
 
 Hal ini mengartikan bahwa kesalahan pada pengamatan satu tidak boleh
 dipengaruhi oleh kesalahan pada pengamatan sebelumnya atau
@@ -217,25 +217,25 @@ akan menjadi tidak akurat, sehingga model regresi linier tidak dapat
 menghasilkan prediksi yang tepat dan dapat mempengaruhi kesimpulan yang
 ditarik dari model tersebut. 3. Variabel x dan variabel e adalah saling
 tidak tergantung untuk setiap observasi sehingga 
-$$
+$
 Cov(x_i, e_i) = E\left[(x_i - E(x_i))(e_i - E(e_i))\right]
-$$
+$
 
-$$
+$
 = E\left[(x_i - \bar{x})(e_i - 0)\right]
-$$
+$
 
-$$
+$
 = E\left[(x_i - \bar{x}) e_i\right]
-$$
+$
 
-$$
+$
 = (x_i - \bar{x}) E(e_i)
-$$
+$
 
-$$
+$
 = 0
-$$ 
+$ 
 Dimisalkan bahwa sampel untuk y diberikan, maka untuk mendapatkan
 taksiran $\beta$ dapat dibuat dengan persamaan $e = y − Xβ$. Hasil yang
 diharapkan adalah akan menghasilkan komponen sistematik yang lebih
@@ -243,9 +243,9 @@ berperan dari pada komponen stokastiknya. Karena bila komponen stokastik
 yang lebih berperan artinya hanya diperoleh sedikit informasi tentang y.
 Dengan kata lain, X tidak mampu menjelaskan y.Pada akhirnya mendapatkan
 persamaan yakni 
-$$
+$
 \hat{\beta} = (X^T X)^{-1} X^T y
-$$ 
+$ 
 yang dinamakan sebagai penaksir (estimator) parameter β secara
 kuadrat terkecil (Ordinary Least Square, OLS).
 
@@ -259,18 +259,18 @@ Pada dasarnya analisis korelasi bertujuan untuk mengukur tingkat
 keeratan hubungan linier yang terjadi antar dua variabel. Tingkat
 keeratan tersebut dapat diukur oleh koefisien korelasi yang rumusnya
 adalah sebagai berikut. 
-$$
+$
 r_{xy} = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}
 {\sqrt{\sum_{i=1}^n (x_i - \bar{x})^2} \sqrt{\sum_{i=1}^n (y_i - \bar{y})^2}} 
-\quad ; \quad -1 \leq r_{xy} \leq 
-1$$
+\quad ; \quad -1 \leq r_{xy} \leq 1
+$
 
 Bentuk lain dari rumus:
 
-$$
+$
 r_{xy} = \frac{\sum_{i=1}^n x_i y_i - n\bar{x}\bar{y}}
 {\sqrt{\sum_{i=1}^n x_i^2 - n\bar{x}^2} \sqrt{\sum_{i=1}^n y_i^2 - n\bar{y}^2}}
-$$ 
+$ 
 Adapun klasifikasi dari nilai koefisien korelasi yakni sebagai
 berikut. 1. Jika nilai r semakin mendekati -- 1, maka kedua variabel
 cenderung semakin berhubungan negatif. Hal ini berarti jika nilai X
@@ -298,9 +298,9 @@ Regresi sederhana merupakan analisis statistik yang menggambarkan
 hubungan antara satu variabel dependen (atau terikat) dengan satu
 variabel independen (atau bebas) menggunakan persamaan linier.Adapun
 model persamaan dari regresi sederhana ini adalah sebagai berikut. 
-$$
+$
 Y = \beta_0 + \beta_1 X + \epsilon
-$$ 
+$ 
 Di mana: - 
 $Y$ adalah variabel dependen (yang ingin diprediksi), -
 $X$ adalah variabel independen (yang digunakan untuk memprediksi $Y$), -
@@ -317,15 +317,11 @@ terkecil dapat memenuhi sifat sebagai berikut.
 1. Jumlah residual sama
 dengan nol. Apabila dituliskan dalam persamaan matematis yakni sebagai
 berikut. 
-$$
-\sum_{i=1}^n e_i = 0
-$$ dengan pembuktian, yakni $$
-\sum_{i=1}^n e_i = \sum_{i=1}^n \left( Y_i - b_0 - b_1 X_i \right)
-$$
-= \sum_{i=1}^n Y_i - n b_0 - b_1 \sum_{i=1}^n X_i = 0 \quad \text{(dari persamaan normal)}
-$$ 
-2. Jumlah kuadrat residual adalah minimum. 
-3. Jumlah nilai observasi
+$\sum_{i=1}^n e_i =0$
+dengan pembuktian, yakni $\sum_{i=1}^n e_i = \sum_{i=1}^n \left( Y_i - b_0 - b_1 X_i \right)
+= \sum_{i=1}^n Y_i - n b_0 - b_1 \sum_{i=1}^n X_i = 0 \quad \text{(dari persamaan normal)}$ 
+3. Jumlah kuadrat residual adalah minimum. 
+4. Jumlah nilai observasi
 ---
 
 #### Regresi Berganda
@@ -347,9 +343,7 @@ kebaikan model untuk mengetahui sejauh mana variabel independen mampu
 menjelaskan variasi pada variabel dependennya. Semakin besar nilai $R^2$
 (mendekati 1), maka model dikatakan semain baik. Adapun rumus dari
 koefisien determinasi yakni sebagai berikut. 
-$$
-R^2 = 1 - \frac{\text{SSE}}{\text{SST}}
-$$ 
+$R^2 = 1 - \frac{\text{SSE}}{\text{SST}}$ 
 Di mana: - $\text{SSE} = \sum (Y_i - \hat{Y}_i)^2$: **Sum of Squared
 Errors** (selisih kuadrat antara nilai aktual dan prediksi), -
 $\text{SST} = \sum (Y_i - \bar{Y})^2$: **Total Sum of Squares** (variasi
@@ -370,25 +364,15 @@ Uji F merupakan uji hipotesis serentak yang ditujukan untuk melihat pengaruh var
 1. Jika nilai signifikan F < 0,05 maka H0 ditolak dan H1 diterima. Artinya semua variabel independent/bebas memiliki pengaruh secara signifikan terhadap variabel dependen/terikat.
 2. Jika nilai signifikan F > 0,05 maka H0 diterima dan H1 Artinya, semua variabel independent/bebas tidak memiliki pengaruh secara signifikan terhadap variabel dependen/terikat.
 Dan hipotesis dalam uji ini yakni sebagai berikut. 
-$$
-H0: β1=β2=…=βp = 0 
-$$
-$$
-H1: minimal terdapat satu βj ≠ 0, j= 1,2,3,…,p
-$$
+$H0: β1=β2=…=βp = 0$
+$H1: minimal terdapat satu βj ≠ 0, j= 1,2,3,…,p$
 p merupakan jumlah parameter yang terdapat di dalam model regresi. Jika dalam tabel ANOVA, maka terdapat beberapa rumus yang diperlukan untuk melengkapi ANOVA yakni sebagai berikut. 
 1. Derajat bebas Regresi : p
 2. Derajat Bebas Residual : $n-(p+1)$
 3. Derajat Bebas Total : $n-1$
-4. Jumlah Kuadrat Regresi : $$
-   \text{SSR} = \sum (\hat{Y}_i - \bar{Y})^2
-   $$
-5. Jumlah Kuadrat Residual : $$
-   \text{SSE} = \sum (Y_i - \hat{Y}_i)^2
-   $$
-6. Jumlah Kuadrat Total : $$
-   \text{SST} = \sum (Y_i - \bar{Y})^2
-   $$
+4. Jumlah Kuadrat Regresi : $\text{SSR} = \sum (\hat{Y}_i - \bar{Y})^2$
+5. Jumlah Kuadrat Residual : $\text{SSE} = \sum (Y_i - \hat{Y}_i)^2$
+6. Jumlah Kuadrat Total : $\text{SST} = \sum (Y_i - \bar{Y})^2$
 7. Kuadrat Tengah Regresi : \( \text{MSR} = \frac{\text{SSR}}{p} \)
 8. Kuadrat Tengah Residual : \( \text{MSE} = \frac{\text{SSE}}{n - p - 1} \)
 9. F hitung : \( \text{Fhitung} = \frac{\text{MSR}}{MSE} \)
@@ -400,16 +384,10 @@ Uji T pada regresi bertujuan untuk menguji apakah nilai koefisien regresi mempun
 1. Jika nilai signifikansi uji t > 0,05 maka H₀ diterima dan Ha ditolak. Artinya tidak ada pengaruh antara variabel independen terhadap variaben dependen.
 2. Jika nilai signifikansi uji t < 0,05 maka H₀ ditolak dan Ha diterima. Artinya terdapat pengaruh antara variabel independen terhadap variabel dependen.
 Adapun hipotesis pengujiannya yakni sebagai berikut. 
-$$ 
-H0 : βi = 0
-$$
-$$
-H1 : βi ≠ 0, i = 1, 2, …, p
-$$
+$ H0 : βi = 0$
+$H1 : βi ≠ 0, i = 1, 2, …, p$
 Adapun statistik uji yang digunakan yakni sebagai berikut. 
-$$
-t_{hit} = \frac{r \cdot \sqrt{n - 2}}{\sqrt{1 - r^2}}
-$$
+$t_{hit} = \frac{r \cdot \sqrt{n - 2}}{\sqrt{1 - r^2}}$
 dengan keterangan , 
 - \( r \): Koefisien korelasi.
 - \( n \): Ukuran sampel.
@@ -426,11 +404,11 @@ Didalam Uji  heteroskedastisitas bermanfaat untuk  melihat  apakah  terdapat ket
 
   Homoskedastisitas sendiri memiliki arti bahwa terdapat varians variabel pada model regresi yang sama. Apabila terjadi sebaliknya varian variabel pada model regresi miliki nilai yang tidak sama maka disebut heteroskedastisitas. Dan jika terjadi heteroskedastisitas, maka hal itu akan mempengaruhi hasil dari analisis data tersebut dikarenakan terdapat perbedaan varian yang menunjukkan data tersebut masih homogen. Pada kondisi homoskedastisitas:
 
-$$\text{Var}(Y_i) = \text{Var}(\varepsilon_i) = \sigma^2, \; i = 1, 2, \ldots, n$$
+$\text{Var}(Y_i) = \text{Var}(\varepsilon_i) = \sigma^2, \; i = 1, 2, \ldots, n$
 
 Sedangkan pada kondisi heteroskedastisitas:
 
-$$\text{Var}(Y_i) = \text{Var}(\varepsilon_i) = \sigma_i^2, \; i = 1, 2, \ldots, n$$
+$\text{Var}(Y_i) = \text{Var}(\varepsilon_i) = \sigma_i^2, \; i = 1, 2, \ldots, n$
 
 dengan n menunjukkan jumlah observasi.
 
@@ -449,9 +427,7 @@ Korelasi Spearman menghitung asosiasi antara dua variabel berdasarkan peringkat 
 
 2. Tanpa memperhatikan tanda dari \( \varepsilon_i \) (diambil \( |\varepsilon_i| \)), berikan rank dari pasangan variabel \( \varepsilon_i \) dengan \( X_i \). Selanjutnya, hitung besarnya koefisien korelasi rank Spearman antara kedua variabel tersebut dengan menggunakan persamaan:
 
-   $$
-   r = 1 - 6 \left[ \frac{\sum d_i^2}{n(n^2 - 1)} \right]
-   $$
+   $r = 1 - 6 \left[ \frac{\sum d_i^2}{n(n^2 - 1)} \right]$
 
    dengan:
    - \( d_i \): selisih rank pasangan variabel \( \varepsilon_i \) dengan \( X_i \) individu ke-\( i \),
@@ -459,9 +435,7 @@ Korelasi Spearman menghitung asosiasi antara dua variabel berdasarkan peringkat 
 
 3. Gunakan statistik uji \( t \) dengan rumusan sebagai berikut:
 
-   $$
-   t = \frac{r \sqrt{n - 2}}{\sqrt{1 - r^2}} \sim t
-   $$
+   $t = \frac{r \sqrt{n - 2}}{\sqrt{1 - r^2}} \sim t$
 
    dengan derajat bebas \( n - 2 \).
    
@@ -516,14 +490,10 @@ pada regresi klasik disyaratkan bahwa antara pengamatan yang satu \( y_i \) deng
 Beberapa uji statistik yang dapat dipergunakan adalah uji Durbin-Watson, uji Run Test dan uji Lagrange Multiplier. Namun uji yang paling sering digunakan adalah uji Durbin-Watson.
 
 Untuk menguji adanya autokorelasi pada lag-1:
-$$
-Y_t = \beta_0 + \beta_1 X_t + e_t
-$$
+$Y_t = \beta_0 + \beta_1 X_t + e_t$
 
 Misalkan ada autokorelasi pada lag-1, \(\mathbb{E}(e_t e_{t-1}) \neq 0\):
-$$
-e_t = \rho e_{t-1} + v_t, \quad -1 < \rho < 1
-$$
+$e_t = \rho e_{t-1} + v_t, \quad -1 < \rho < 1$
 
 dengan \(\rho\) = koefisien otokorelasi atau otokovarians.
 
@@ -624,33 +594,23 @@ Walaupun mudah penggunaannya, tetapi **generalized difference regression** dalam
 1. Metode selisih/perbedaan pertama (the first difference method)
 
 Oleh karena terdapat data \(t\) dan \(t-1\), yaitu autokorelasi sempurna yang positif atau negatif, kita dapat menulis persamaan regresi sebagai berikut:
-\[
-Y_t - Y_{t-1} = \beta_1 (X_t - X_{t-1}) + v_t
-\]
+$Y_t - Y_{t-1} = \beta_1 (X_t - X_{t-1}) + v_t$
 
 Di mana:
-\[
-\Delta_t = (X_t - X_{t-1}), \quad \Delta_t Y_t = \beta_1 \Delta_t X_t + v_t
-\]
+$\Delta_t = (X_t - X_{t-1}), \quad \Delta_t Y_t = \beta_1 \Delta_t X_t + v_t$
 
 Di sini, \(\Delta_t\) disebut operator perbedaan pertama.
 
 2. \(\rho\) didasarkan pada Statistik uji Durbin-Watson
 
-\[
-\hat{\rho} = 1 - \frac{d}{2}
-\]
+$\hat{\rho} = 1 - \frac{d}{2}$
 
 Untuk \(n\) kecil, Theil dan Nagar mengusulkan rumus sebagai berikut:
-\[
-\hat{\rho} = 1 - \frac{d}{2}
-\]
+$\hat{\rho} = 1 - \frac{d}{2}$
 
 Estimasi parameter \(\rho\) dapat dihitung menggunakan persamaan berikut:
 
-\[
-\hat{\rho} = \frac{n^2 \left(1 - \frac{d}{2}\right) + k^2}{n^2 - k^2}
-\]
+$\hat{\rho} = \frac{n^2 \left(1 - \frac{d}{2}\right) + k^2}{n^2 - k^2}$
 
 dengan:
 - \(n\) = banyaknya observasi,
@@ -659,9 +619,7 @@ dengan:
 
 Parameter \(\rho\) juga dapat diduga berdasarkan error \(e_t\) dari model:
 
-\[
-e_t = \rho e_{t-1} + v_t
-\]
+$e_t = \rho e_{t-1} + v_t$
 
 Di sini, \(\rho\) dapat dihitung dengan meregresikan \(e_t\) terhadap \(e_{t-1}\) tanpa intersep, sehingga diperoleh estimasi \(\hat{\rho}\).
 
@@ -707,9 +665,7 @@ Persyaratan:
 
 Rumus untuk uji Shapiro-Wilk melibatkan perhitungan statistik \( W \) yang mengukur sejauh mana data mengikuti distribusi normal. Berikut adalah rumus statistik uji Shapiro-Wilk:
 
-\[
-W = \frac{\left( \sum_{i=1}^{n} a_i x_{(i)} \right)^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2}
-\]
+$W = \frac{\left( \sum_{i=1}^{n} a_i x_{(i)} \right)^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2}$
 
 Di mana:
 - \( x_{(i)} \) adalah data yang diurutkan dari yang terkecil hingga yang terbesar.
@@ -807,9 +763,7 @@ Anda diminta untuk melakukan uji linieritas antara variabel **X** dan **Y** meng
 3. **Langkah 3: Uji Korelasi Pearson**  
    Uji ini dilakukan untuk menguji kekuatan dan arah hubungan linier antara X dan Y. Rumus uji Korelasi Pearson adalah:
 
-   \[
-   r = \frac{n(\sum xy) - (\sum x)(\sum y)}{\sqrt{[n\sum x^2 - (\sum x)^2][n\sum y^2 - (\sum y)^2]}}
-   \]
+   $r = \frac{n(\sum xy) - (\sum x)(\sum y)}{\sqrt{[n\sum x^2 - (\sum x)^2][n\sum y^2 - (\sum y)^2]}}$
 
    Di mana:
    - \( r \) adalah koefisien korelasi Pearson.
@@ -823,9 +777,7 @@ Anda diminta untuk melakukan uji linieritas antara variabel **X** dan **Y** meng
 
    Misalkan model regresi liniernya adalah:
 
-   \[
-   Y = \beta_0 + \beta_1 X + \epsilon
-   \]
+   $Y = \beta_0 + \beta_1 X + \epsilon$
 
    Dalam uji linieritas, kita dapat menguji apakah koefisien regresi (\( \beta_1 \)) signifikan atau tidak menggunakan uji t atau analisis residual untuk melihat pola ketidaksesuaian yang mungkin menunjukkan ketidaklinieran.
 
@@ -842,9 +794,7 @@ Anda diminta untuk melakukan uji linieritas antara variabel **X** dan **Y** meng
 ### KONSEKUENSI TERJADI MULTIKOLINEARITAS
 
 #### Jika terjadi multikolinearitas yang sempurna, yaitu jika:
-\[
-\beta_1 X_1 + \beta_2 X_2 + \dots + \beta_p X_p = 0
-\]
+$\beta_1 X_1 + \beta_2 X_2 + \dots + \beta_p X_p = 0$
 
 Maka dengan menggunakan metode estimasi OLS tidak dapat diperoleh koefisien regresi yang unik. Pada model regresi berganda dengan metode estimasi OLS, jika terjadi multikolinearitas sempurna di antara variabel independen, maka \((X'X)\) menjadi matriks singular, akibatnya invers dari \((X'X)\), yaitu \((X'X)^{-1}\), tidak dapat ditentukan secara unik. Dengan demikian nilai \(\beta_1, \beta_2, \dots, \beta_p\) tidak dapat diperoleh secara unik antara satu dengan yang lain.
 
@@ -852,9 +802,7 @@ Maka dengan menggunakan metode estimasi OLS tidak dapat diperoleh koefisien regr
 
 #### Jika terjadi multikolinearitas yang mendekati sempurna 
 (Korelasi yang tinggi di antara variabel independen), yaitu jika:
-\[
-\beta_1 X_1 + \beta_2 X_2 + \dots + \beta_p X_p \approx 0
-\]
+$\beta_1 X_1 + \beta_2 X_2 + \dots + \beta_p X_p \approx 0$
 
 Jika \((X'X)\) merupakan matriks singular maka \(\text{det}(X'X) = 0\), tetapi jika terjadi multikolinearitas yang mendekati sempurna, \(\text{det}(X'X)\) mendekati 0, sehingga \(\text{var}(\hat{\beta})\) membesar (**over estimated**). Artinya, varians dari koefisien regresi membesar, sehingga **standard error** dari koefisien regresi membesar. Dengan kata lain, jika terjadi masalah multikolinearitas yang mendekati sempurna, maka hasil pendugaan dengan metode estimasi OLS masih tak bias, tetapi tidak efisien (variansnya tidak minimum).
 
@@ -880,9 +828,7 @@ Selain itu, analisis tren (trend analysis) juga termasuk jenis analisis dinamis 
 Teknik lainnya selain yang disebutkan di atas adalah dengan penggabungan data (data panel), yaitu data cross section dan time series secara bersama-sama dipergunakan dalam suatu analisis. Misalkan kita ingin mempelajari/meneliti permintaan mobil di Jakarta untuk golongan pendapatan menengah ke atas. Misalkan kita sudah mempunyai data berkala, selama kuartal I, II & III ( 15 tahun ) tentang jumlah mobil yang terjual (Q), rata-rata harga mobil (P), pendapatan masyarakat (Y) 
 dan t menunjukkan waktu dengan model regresi sebagai berikut :
 
-$$
-Q_t = \beta_0 + \beta_1 P + \beta_2 Y + \varepsilon
-$$
+$Q_t = \beta_0 + \beta_1 P + \beta_2 Y + \varepsilon$
 
 
 #### Mengeluarkan satu variabel atau lebih dan kesalahan spesifikasi
@@ -895,24 +841,16 @@ Jika dalam model terdapat kasus kolinearitas ganda yang serius, maka salah satu 
 Misalkan, kita mempunyai data berkala (*time series data*) mengenai konsumsi (Y), pendapatan (X₁), dan kekayaan (X₂). Salah satu alasan mengapa multikolinearitas terjadi antara pendapatan dan kekayaan ialah bahwa melalui perkembangan waktu, kedua variabel independen cenderung untuk bergerak dengan arah yang sama. Salah satu cara untuk membuat ketergantungan (*dependency*) antara kedua variabel tersebut caranya seperti berikut:
 
 -   Model Awal
-$$
-Y_t = \beta_0 + \beta_1 X_{1t} + \beta_2 X_{2t} + \varepsilon_t
-$$
+$Y_t = \beta_0 + \beta_1 X_{1t} + \beta_2 X_{2t} + \varepsilon_t$
 
 -   Kemudian dibuat lag-1:
-$$
-Y_{t-1} = \beta_0 + \beta_1 X_{1, t-1} + \beta_2 X_{2, t-1} + \varepsilon_{t-1}
-$$
+$ _{t-1} = \beta_0 + \beta_1 X_{1, t-1} + \beta_2 X_{2, t-1} + \varepsilon_{t-1}$
 
 -   Selanjutnya dikurangkan, sehingga persamaannya menjadi:
-$$
-Y_t - Y_{t-1} = \beta_1 (X_{1t} - X_{1, t-1}) + \beta_2 (X_{2t} - X_{2, t-1}) + v_t
-$$
+$Y_t - Y_{t-1} = \beta_1 (X_{1t} - X_{1, t-1}) + \beta_2 (X_{2t} - X_{2, t-1}) + v_t$
 
 dengan:
-$$
-v_t = \varepsilon_t - \varepsilon_{t-1}
-$$
+$v_t = \varepsilon_t - \varepsilon_{t-1}$
 
 Ini lah yang dimaksud dengan perbedaan pertama (*first difference*).
 
