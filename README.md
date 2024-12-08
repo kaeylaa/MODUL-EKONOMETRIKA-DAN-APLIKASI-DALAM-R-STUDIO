@@ -217,25 +217,11 @@ akan menjadi tidak akurat, sehingga model regresi linier tidak dapat
 menghasilkan prediksi yang tepat dan dapat mempengaruhi kesimpulan yang
 ditarik dari model tersebut. 3. Variabel x dan variabel e adalah saling
 tidak tergantung untuk setiap observasi sehingga 
-$
-Cov(x_i, e_i) = E\left[(x_i - E(x_i))(e_i - E(e_i))\right]
-$
-
-$
-= E\left[(x_i - \bar{x})(e_i - 0)\right]
-$
-
-$
-= E\left[(x_i - \bar{x}) e_i\right]
-$
-
-$
-= (x_i - \bar{x}) E(e_i)
-$
-
-$
-= 0
-$ 
+$Cov(x_i, e_i) = E\left[(x_i - E(x_i))(e_i - E(e_i))\right]$
+$= E\left[(x_i - \bar{x})(e_i - 0)\right]$
+$= E\left[(x_i - \bar{x}) e_i\right]$
+$= (x_i - \bar{x}) E(e_i)$
+$= 0$ 
 Dimisalkan bahwa sampel untuk y diberikan, maka untuk mendapatkan
 taksiran $\beta$ dapat dibuat dengan persamaan $e = y − Xβ$. Hasil yang
 diharapkan adalah akan menghasilkan komponen sistematik yang lebih
@@ -443,9 +429,7 @@ Korelasi Spearman menghitung asosiasi antara dua variabel berdasarkan peringkat 
 
 Uji Glejser merupakan salah satu metode statistik yang digunakan untuk mendeteksi adanya heteroskedastisitas dalam sebuah model. Pada uji Glejser, tahap pertama adalah meregresikan \( Y \) terhadap \( X \) dan diperoleh \( \varepsilon_i \). Selanjutnya, pada tahap kedua dilakukan regresi \( |\varepsilon_i| \) terhadap \( X \). Beberapa formula yang dianjurkan antara lain:
 
-\[
-|\varepsilon_i| = \beta_0 + \beta_1 X_i + V_i
-\]
+$|\varepsilon_i| = \beta_0 + \beta_1 X_i + V_i$
 
 Dari model di atas, maka tahapan dalam uji Glejser adalah:
 
@@ -472,9 +456,7 @@ Beberapa transformasi yang digunakan adalah: `ln`, `log`, `sqrt`, sinus, cosinus
 
 Model umum regresi linear:
 
-\[
-Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_p X_p + \varepsilon
-\]
+$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_p X_p + \varepsilon$
 
 ## AUTO KORELASI 
 
