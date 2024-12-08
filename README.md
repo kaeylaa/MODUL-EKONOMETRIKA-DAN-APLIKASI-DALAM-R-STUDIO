@@ -407,19 +407,19 @@ statistika. Beberapa statistik uji yang digunakan anatara lain:
 
 Korelasi Spearman menghitung asosiasi antara dua variabel berdasarkan peringkat (rank) daripada nilai aslinya. Langkah-langkahnya adalah sebagai berikut:
 
-1. Meregresikan $( Y )$ pada $( X $), \( Y_i = \beta_0 + \beta_1 X_i + \varepsilon_i \).
+1. Meregresikan $( Y )$ pada $( X $), $( Y_i = \beta_0 + \beta_1 X_i + \varepsilon_i $).
 
-   Dari hasil pendugaan menggunakan metode OLS, diperoleh error (\( \varepsilon_i \)).
+   Dari hasil pendugaan menggunakan metode OLS, diperoleh error ($( \varepsilon_i $)).
 
-2. Tanpa memperhatikan tanda dari \( \varepsilon_i \) (diambil \( |\varepsilon_i| \)), berikan rank dari pasangan variabel \( \varepsilon_i \) dengan \( X_i \). Selanjutnya, hitung besarnya koefisien korelasi rank Spearman antara kedua variabel tersebut dengan menggunakan persamaan:
+2. Tanpa memperhatikan tanda dari $( \varepsilon_i \)$ (diambil $( |\varepsilon_i| \)$, berikan rank dari pasangan variabel $( \varepsilon_i \)$ dengan $( X_i \)$. Selanjutnya, hitung besarnya koefisien korelasi rank Spearman antara kedua variabel tersebut dengan menggunakan persamaan:
 
    $r = 1 - 6 \left[ \frac{\sum d_i^2}{n(n^2 - 1)} \right]$
 
    dengan:
-   - \( d_i \): selisih rank pasangan variabel \( \varepsilon_i \) dengan \( X_i \) individu ke-\( i \),
-   - \( n \): banyaknya individu yang diamati.
+   - $( d_i \)$: selisih rank pasangan variabel $( \varepsilon_i \)$ dengan $( X_i \)$ individu ke-$( i \)$,
+   - $( n \)$: banyaknya individu yang diamati.
 
-3. Gunakan statistik uji \( t \) dengan rumusan sebagai berikut:
+3. Gunakan statistik uji $( t \)$ dengan rumusan sebagai berikut:
 
    $t = \frac{r \sqrt{n - 2}}{\sqrt{1 - r^2}} \sim t$
 
@@ -437,12 +437,12 @@ Dari model di atas, maka tahapan dalam uji Glejser adalah:
 2. **Regresikan \( |\varepsilon| \) (nilai absolut residual) terhadap \( X \).**  
 3. **Merumuskan Hipotesis Uji \( t \):**
 
-   - \( H_0 : \beta_i = 0 \)  
-   - \( H_1 : \beta_i \neq 0 \), di mana \( i = 1, 2, \ldots, p \)
+   - $( H_0 : \beta_i = 0 \)$
+   - $( H_1 : \beta_i \neq 0 \)$, di mana $( i = 1, 2, \ldots, p \)$
 
-   Tolak \( H_0 \) jika \( \text{Sig.} < \alpha \), di mana \( \alpha = 0,05 \).  
+   Tolak $( H_0 \)$ jika $( \text{Sig.} < \alpha \), di mana \( \alpha = 0,05 \)$.  
 
-   Jika \( H_0 \) ditolak, maka terdapat heteroskedastisitas.
+   Jika $( H_0 \)$ ditolak, maka terdapat heteroskedastisitas.
    
 ### CARA MENGATASI HETEROSKEDASTISITAS
 
