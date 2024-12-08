@@ -407,7 +407,7 @@ statistika. Beberapa statistik uji yang digunakan anatara lain:
 
 Korelasi Spearman menghitung asosiasi antara dua variabel berdasarkan peringkat (rank) daripada nilai aslinya. Langkah-langkahnya adalah sebagai berikut:
 
-1. Meregresikan \( Y \) pada \( X \), \( Y_i = \beta_0 + \beta_1 X_i + \varepsilon_i \).
+1. Meregresikan $( Y )$ pada $( X $), \( Y_i = \beta_0 + \beta_1 X_i + \varepsilon_i \).
 
    Dari hasil pendugaan menggunakan metode OLS, diperoleh error (\( \varepsilon_i \)).
 
