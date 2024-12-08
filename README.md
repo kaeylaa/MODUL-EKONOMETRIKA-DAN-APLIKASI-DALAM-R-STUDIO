@@ -55,7 +55,8 @@ individu/perusahaan tidak melakukan inflasi secara besar-besaran. 2.
 Teori Matematika : Dalam hal ini, teori matematika diaplikasikan dalam
 suatu pembentukan persamaan model matematis tanpa verifikasi teori
 secara empiris. Misalnya pada fungsi produksi yang dimodelkan sebagai
-berikut. $$
+berikut. 
+$$
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2
 $$
 
@@ -180,8 +181,10 @@ Metode Ordinary Least Squares ini merupakan model estimasi yang
 ditujukan untuk mendapatkan estimator regresi (koefisien regresi) yang
 tidak bias (unbiased) dan efisien (efficient). Dalam suatu model
 statistik linier yakni
-$$y = \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_k X_k + \epsilon
-$$ Variabel e sangat memegang peran dalam model ekonometrika, tetapi
+$$
+y = \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_k X_k + \epsilon
+$$ 
+Variabel e sangat memegang peran dalam model ekonometrika, tetapi
 variabel ini tidak dapat diteliti dan tidak pula tersedia informasi
 tentang bentuk distribusi kemungkinannya. Disamping asumsi mengenai
 distribusi probabilitasnya, beberapa asumsi lainnya khususnya tentang
@@ -213,7 +216,8 @@ sesudahnya.Jika autokorelasi terjadi, maka estimasi koefisien regresi
 akan menjadi tidak akurat, sehingga model regresi linier tidak dapat
 menghasilkan prediksi yang tepat dan dapat mempengaruhi kesimpulan yang
 ditarik dari model tersebut. 3. Variabel x dan variabel e adalah saling
-tidak tergantung untuk setiap observasi sehingga $$
+tidak tergantung untuk setiap observasi sehingga 
+$$
 Cov(x_i, e_i) = E\left[(x_i - E(x_i))(e_i - E(e_i))\right]
 $$
 
@@ -231,15 +235,18 @@ $$
 
 $$
 = 0
-$$ Dimisalkan bahwa sampel untuk y diberikan, maka untuk mendapatkan
+$$ 
+Dimisalkan bahwa sampel untuk y diberikan, maka untuk mendapatkan
 taksiran $\beta$ dapat dibuat dengan persamaan $e = y − Xβ$. Hasil yang
 diharapkan adalah akan menghasilkan komponen sistematik yang lebih
 berperan dari pada komponen stokastiknya. Karena bila komponen stokastik
 yang lebih berperan artinya hanya diperoleh sedikit informasi tentang y.
 Dengan kata lain, X tidak mampu menjelaskan y.Pada akhirnya mendapatkan
-persamaan yakni $$
+persamaan yakni 
+$$
 \hat{\beta} = (X^T X)^{-1} X^T y
-$$ yang dinamakan sebagai penaksir (estimator) parameter β secara
+$$ 
+yang dinamakan sebagai penaksir (estimator) parameter β secara
 kuadrat terkecil (Ordinary Least Square, OLS).
 
 ------------------------------------------------------------------------
@@ -251,17 +258,20 @@ kuadrat terkecil (Ordinary Least Square, OLS).
 Pada dasarnya analisis korelasi bertujuan untuk mengukur tingkat
 keeratan hubungan linier yang terjadi antar dua variabel. Tingkat
 keeratan tersebut dapat diukur oleh koefisien korelasi yang rumusnya
-adalah sebagai berikut. $$
+adalah sebagai berikut. 
+$$
 r_{xy} = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}
 {\sqrt{\sum_{i=1}^n (x_i - \bar{x})^2} \sqrt{\sum_{i=1}^n (y_i - \bar{y})^2}} 
-\quad ; \quad -1 \leq r_{xy} \leq 1$$
+\quad ; \quad -1 \leq r_{xy} \leq 
+1$$
 
 Bentuk lain dari rumus:
 
 $$
 r_{xy} = \frac{\sum_{i=1}^n x_i y_i - n\bar{x}\bar{y}}
 {\sqrt{\sum_{i=1}^n x_i^2 - n\bar{x}^2} \sqrt{\sum_{i=1}^n y_i^2 - n\bar{y}^2}}
-$$ Adapun klasifikasi dari nilai koefisien korelasi yakni sebagai
+$$ 
+Adapun klasifikasi dari nilai koefisien korelasi yakni sebagai
 berikut. 1. Jika nilai r semakin mendekati -- 1, maka kedua variabel
 cenderung semakin berhubungan negatif. Hal ini berarti jika nilai X
 semakin naik, maka nilai Y semakin turun. Begitu juga sebaliknya, jika
@@ -287,12 +297,16 @@ Pada dasarnya Analisis regresi merupakan suatu bentuk hubungan dari suatu pengar
 Regresi sederhana merupakan analisis statistik yang menggambarkan
 hubungan antara satu variabel dependen (atau terikat) dengan satu
 variabel independen (atau bebas) menggunakan persamaan linier.Adapun
-model persamaan dari regresi sederhana ini adalah sebagai berikut. $$
+model persamaan dari regresi sederhana ini adalah sebagai berikut. 
+$$
 Y = \beta_0 + \beta_1 X + \epsilon
-$$ Di mana: - $Y$ adalah variabel dependen (yang ingin diprediksi), -
+$$ 
+Di mana: - 
+$Y$ adalah variabel dependen (yang ingin diprediksi), -
 $X$ adalah variabel independen (yang digunakan untuk memprediksi $Y$), -
 $\beta_0$ adalah **intercept** atau konstanta (nilai $Y$ ketika
-$X = 0$), - $\beta_1$ adalah **koefisien regresi** atau slope (mengukur
+$X = 0$), - 
+$\beta_1$ adalah **koefisien regresi** atau slope (mengukur
 perubahan pada $Y$ untuk setiap perubahan satu unit pada $X$), -
 $\epsilon$ adalah **error term** atau gangguan (perbedaan antara nilai
 yang diamati dan yang diprediksi oleh model).
@@ -301,7 +315,8 @@ $\beta_0$ dan $\beta_1$ berperan sebagai parameter populasi. Selain itu,
 persamaan regresi yang dihitung dengan menggunakan metode kuadrat
 terkecil dapat memenuhi sifat sebagai berikut. 1. Jumlah residual sama
 dengan nol. Apabila dituliskan dalam persamaan matematis yakni sebagai
-berikut. $$
+berikut. 
+$$
 \sum_{i=1}^n e_i = 0
 $$ dengan pembuktian, yakni $$
 \sum_{i=1}^n e_i = \sum_{i=1}^n \left( Y_i - b_0 - b_1 X_i \right)
@@ -330,9 +345,11 @@ Koefisien determinasi dalam konsep regresi diartikan sebagai ukuran
 kebaikan model untuk mengetahui sejauh mana variabel independen mampu
 menjelaskan variasi pada variabel dependennya. Semakin besar nilai $R^2$
 (mendekati 1), maka model dikatakan semain baik. Adapun rumus dari
-koefisien determinasi yakni sebagai berikut. $$
+koefisien determinasi yakni sebagai berikut. 
+$$
 R^2 = 1 - \frac{\text{SSE}}{\text{SST}}
-$$ Di mana: - $\text{SSE} = \sum (Y_i - \hat{Y}_i)^2$: **Sum of Squared
+$$ 
+Di mana: - $\text{SSE} = \sum (Y_i - \hat{Y}_i)^2$: **Sum of Squared
 Errors** (selisih kuadrat antara nilai aktual dan prediksi), -
 $\text{SST} = \sum (Y_i - \bar{Y})^2$: **Total Sum of Squares** (variasi
 total dalam $Y$). Nilai apda koefisien determinasi sendiri berkisar dari
@@ -498,14 +515,14 @@ pada regresi klasik disyaratkan bahwa antara pengamatan yang satu \( y_i \) deng
 Beberapa uji statistik yang dapat dipergunakan adalah uji Durbin-Watson, uji Run Test dan uji Lagrange Multiplier. Namun uji yang paling sering digunakan adalah uji Durbin-Watson.
 
 Untuk menguji adanya autokorelasi pada lag-1:
-\[
+$$
 Y_t = \beta_0 + \beta_1 X_t + e_t
-\]
+$$
 
 Misalkan ada autokorelasi pada lag-1, \(\mathbb{E}(e_t e_{t-1}) \neq 0\):
-\[
+$$
 e_t = \rho e_{t-1} + v_t, \quad -1 < \rho < 1
-\]
+$$
 
 dengan \(\rho\) = koefisien otokorelasi atau otokovarians.
 
