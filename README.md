@@ -1071,30 +1071,27 @@ Data yang digunakan sama seperti studi kasus di regresi linier sederhana hanya s
 Kita harus memasukkan data ke dalam format yang dapat diproses oleh perangkat R.Berikut adalah code nya;
 
 ```{r, echo=TRUE}
+```{r, echo=TRUE}
 data_IPM_berganda <- data.frame(
   KABUPATEN = c("Pacitan", "Ponorogo", "Trenggalek", "Tulungagung", "Blitar", "Kediri", 
                 "Malang", "Lumajang", "Jember", "Banyuwangi", "Bondowoso", "Situbondo", 
                 "Probolinggo", "Pasuruan", "Sidoarjo", "Mojokerto", "Jombang", "Nganjuk", 
                 "Madiun", "Magetan", "Ngawi", "Bojonegoro", "Tuban", "Lamongan", "Gresik", 
                 "Bangkalan", "Sampang", "Pamekasan", "Sumenep"),
-  X1_ANGKA_HARAPAN_HIDUP = c(71.94, 72.77, 73.75, 74.08, 73.52, 73.11, 72.55, 71.35, 69.15, 
-                             69.74, 66.74, 68.35, 67.29, 70.23, 74.03, 73.24, 72.31, 71.54, 
-                             72.19, 72.93, 71.56, 71.64, 72.4, 72.64, 72.66, 70.18, 68.03, 
-                             67.58, 71.41),
-  X2_RATA_RATA_LAMA_SEKOLAH = c(7.5, 7.54, 7.55, 8.0, 7.83, 7.42, 7.42, 6.48, 6.85, 6.46, 5.93, 
-                                6.46, 6.11, 6.74, 8.01, 8.54, 7.65, 7.64, 7.31, 8.24, 7.35, 7.93, 
-                                7.92, 7.96, 7.93, 5.95, 5.85, 6.69, 5.71),
-  X3_HARAPAN_LAMA_SEKOLAH = c(12.64, 12.73, 12.35, 13.31, 12.46, 13.15, 13.81, 13.42, 13.13, 
-                              13.42, 13.28, 13.15, 12.85, 12.41, 13.44, 12.88, 13.16, 12.86, 
-                              12.43, 14.03, 12.39, 13.48, 13.43, 13.48, 13.43, 12.57, 12.67, 
+  X1_ANGKA_HARAPAN_HIDUP = c(71.94, 72.77, 73.75, 74.08, 73.52, 72.61, 72.55, 70.1, 69.15, 70.65, 66.74, 69.13, 67.2, 70.23, 74.04, 72.53, 72.4, 71.54, 71.38, 72.59, 72.3, 71.56, 71.43, 72.4, 72.66, 70.18, 68.03, 67.58, 71.41),
+  X2_RATA_RATA_LAMA_SEKOLAH = c(7.6, 7.54, 7.55, 8.33, 7.39, 8.02, 7.42, 6.4, 6.48, 7.16, 5.93, 
+                                6.46, 6.11, 7.4, 10.5, 8.51, 8.54, 7.64, 7.81, 8.24, 7.06, 7.33, 
+                                6.95, 7.92, 9.3, 5.95, 4.85, 6.69, 5.71),
+  X3_HARAPAN_LAMA_SEKOLAH = c(12.64, 13.73, 12.35, 13.31, 12.46, 13.15, 13.18, 11.81, 13.42, 
+                              12.8, 13.28, 13.15, 12.35, 12.41, 14.93, 12.88, 13.27, 12.86, 
+                              13.16, 14.03, 12.7, 12.39, 12.21, 13.48, 13.73, 11.6, 12.37, 
                               13.64, 13.2),
-  IPM = c(68.39, 70.81, 69.74, 72.96, 70.58, 72.05, 70.36, 67.11, 67.11, 67.11, 66.03, 67.61, 
-          65.87, 68.67, 73.68, 73.83, 71.39, 71.72, 71.7, 73.92, 69.04, 72.18, 72.58, 73.11, 
-          76.11, 66.11, 64.22, 66.85, 66.43)
+  IPM = c(68.39, 70.81, 69.74, 73, 70.58, 72.05, 70.36, 65.46, 67.11, 70.62, 66.43, 67.38, 
+          66.07, 68.6, 80.29, 73.83, 72.97, 71.72, 71.73, 73.92, 70.54, 69.04, 68.4, 72.58, 
+          76.11, 64.11, 62.7, 66.26, 66.43)
 )
 print(data_IPM_berganda)
 ```
-
 2.) Memastikan Data Bersih 
 
 Sebelum melakukan analisis, data harus bersih. Berikut langkah-langkah yang dilakukan:
@@ -1116,7 +1113,7 @@ print(model_berganda)
 summary(model_berganda)
 ```
 
-Berdasarkan output diatas, maka bisa dituliskan ke dalam model regresi seperti berikut; $$ Y= 15.3087 + 0.3059X1 + 2.7523X2 + 0.9896X3 $$
+Berdasarkan output diatas, maka bisa dituliskan ke dalam model regresi seperti berikut; $$ Y= 19.8251 + 0.2614X1 + 2.4246X2 + 1.0521X3 $$
 4.) Melakukan Uji Asumsi 
 
 a. HETEROSKEDASTISITAS
@@ -1144,7 +1141,7 @@ bptest(model_berganda) # Hasil uji Breusch-Pagan
 - **Kesimpulan:** Jika p-value < 0.05, tolak H0: terdapat heteroskedastisitas.
 Jika p-value >= 0.05, gagal menolak H0: tidak ada heteroskedastisitas pada data.
 
-- Hasil: Berdasarkan output R, p-value = 0.892 > 0.05. Maka data tidak ada heteroskedastisias.
+- Hasil: Berdasarkan output R, p-value = 0.5492 > 0.05. Maka data tidak ada heteroskedastisias.
 
 b. AUTO KORELASI 
 
@@ -1167,7 +1164,7 @@ dwtest(model_berganda) # Hasil uji Durbin-Watson
 - **Kesimpulan:** Jika p-value < 0.05, tolak H0: terdapat autokorelasi pada residual.
 Jika p-value >= 0.05, gagal menolak H0: tidak ada autokorelasi pada residual.
 
-- Hasil: Berdasarkan output R, p-value = 0.04122 < 0.05. Maka data  ada autokorelasi pada residual.
+- Hasil: Berdasarkan output R, p-value = 0.148 > 0.05. Maka data tidak ada autokorelasi pada residual.
 
 c. NORMALITAS
 
@@ -1192,7 +1189,7 @@ hist(model_berganda$residuals, main = "Histogram Residual", xlab = "Residual")
 
 - **Kesimpulan:** Jika p-value < 0.05, maka data tidak normal. Sebaliknya, jika p-value >= 0.05, data berdistribusi normal.
 
-- Hasil: Berdasarkan output R, p-value = 0.08121 > 0.05. Maka data berdistribusi normal.
+- Hasil: Berdasarkan output R, p-value = 0.454 > 0.05. Maka data berdistribusi normal.
 
 
 d. LINIERITAS
@@ -1234,12 +1231,11 @@ Sebaliknya, jika \( \frac{1}{VIF_k} \) > 0.1, maka kemungkinan besar tidak terja
 
 **Hasil Perhitungan VIF**
 
-- **X1_ANGKA_HARAPAN_HIDUP**: 2.90 > 0.1
-- **X2_RATA_RATA_LAMA_SEKOLAH**: 2.99 > 0.1
-- **X3_HARAPAN_LAMA_SEKOLAH**: 1.08 > 0.1 
+- **X1_ANGKA_HARAPAN_HIDUP**: 1.757390 > 0.1
+- **X2_RATA_RATA_LAMA_SEKOLAH**: 2.518234 > 0.1
+- **X3_HARAPAN_LAMA_SEKOLAH**: 3.651215 > 0.1 
 
 - Hasil: Dengan demikian, **tidak terdapat multikolinearitas** yang signifikan di antara variabel independen dalam data yang digunakan.
-
 
 # DAFTAR PUSTAKA 
 
